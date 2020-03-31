@@ -40,7 +40,7 @@ fn calculate_endorsement(prices: DailyPrice, quote: Quote, coverage_level: f64, 
 
      // Expected Revenue Amount
     let _era: f64 = {
-        let x = (_wp * 1000000.00) / 100.00;
+        let x = (_wp * _dp) / 100.00;
         x.round()
     };
 
